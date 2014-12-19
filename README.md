@@ -1,13 +1,17 @@
-meteor-state-machine [![Build Status](https://travis-ci.org/zhouzhuojie/meteor-state-machine.svg)](https://travis-ci.org/zhouzhuojie/meteor-state-machine)
+reactive-state-machine 
 ====================
 
-Javascript state machine for Meteor
+Reactive Version of the Javascript state machine - the API stays the same!
 
-A quick port from [jakesgordon/javascript-state-machine](https://github.com/jakesgordon/javascript-state-machine)
+The current Variable of the state machine is reactive, you can use it like every variable.
+It is unsing the Object.defineProperty API.
+
+[jakesgordon/javascript-state-machine](https://github.com/jakesgordon/javascript-state-machine)
+
 
 Installation
 ------------
 
 ```
-meteor add mrt:state-machine
+meteor add flowkey:state-machine
 ```

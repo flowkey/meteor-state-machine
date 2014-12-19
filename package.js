@@ -1,12 +1,13 @@
 Package.describe({
-  summary: "Javascript-state-machine for Meteor",
+  summary: "Reactive Javascript-state-machine for Meteor",
   version: "0.1.0",
   git: "https://github.com/zhouzhuojie/meteor-state-machine.git",
-  name: "mrt:state-machine"
+  name: "flowkey:state-machine"
 });
 
 Package.on_use(function (api) {
-  api.add_files('javascript-state-machine/state-machine.min.js', 'client');
+  api.use("reactive-var");
+  api.add_files('state-machine.js', 'client');
   api.add_files('main.js', 'client');
   if (api.export){
     api.export('StateMachine', 'client');
